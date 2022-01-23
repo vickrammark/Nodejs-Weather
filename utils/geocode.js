@@ -13,6 +13,7 @@ const start = async(input) => {
             humidity: current.humidity,
             place: input,
             icons: current.weather_icons[0],
+            day_or_night: current.is_day
         };
     } else {
         return {
