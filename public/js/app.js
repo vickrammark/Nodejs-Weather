@@ -6,7 +6,7 @@ const getWeatherData = async(e) => {
     const weather_data = document.getElementById("data");
     weather_data.innerHTML = "Loading....";
     const response = await fetch(
-        `http://localhost:3000/weather?address=${formData.get("weather")}`
+        `/weather?address=${formData.get("weather")}`
     );
     const data = await response.json();
     if (data.error) {
